@@ -1,15 +1,13 @@
-def add(a: int)->int:
-    sum=0
+def add(a):
+    s=0;
     while a:
-        r=a%10
-        sum=sum+r
+        re=a%10
+        s+=re
         a=a//10
-    if sum<10:
-        return sum
-    else:
-        return add(sum)
-
+    return s
+    
 n=int(input())
-s=add(n)
-print(s)
-        
+k=add(n)
+while k>9:
+    k=add(k)
+print(k)
