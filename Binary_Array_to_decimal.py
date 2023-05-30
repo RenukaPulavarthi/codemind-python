@@ -1,7 +1,9 @@
 n=int(input())
+n=n-1
+c=0
 lst=list(map(int,input().split()))
-s=0
 for i in lst:
-    s+=i*(2**(n-1))
+    if i==1:
+        c+=2**n
     n-=1
-print(s)
+print(c)
