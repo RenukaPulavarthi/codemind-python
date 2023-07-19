@@ -1,7 +1,8 @@
-n=int(input())
 r=int(input())
-lst=[]
-for i in range(n):
+c=int(input())
+k=[]
+for i in range(r):
     l=list(map(int,input().split()))
-    lst.append(sum(l))
-print(sum(lst))
+    k.append(sum(l))
+print(sum(k))
+    
