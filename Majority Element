@@ -1,0 +1,10 @@
+n=int(input())
+lst=list(map(int,input().split()))
+num=lst[0]
+m=lst.count(lst[0])
+for i in range(n):
+    if m<lst.count(lst[i]):
+        m=lst.count(lst[i])
+        num=lst[i]
+print(num)
+    
