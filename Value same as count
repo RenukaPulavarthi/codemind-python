@@ -1,0 +1,8 @@
+n=int(input())
+lst=list(map(int,input().split()))
+s=[]
+for i in range(n):
+    if lst[i]==lst.count(lst[i]):
+        if lst[i] not in s:
+            s.append(lst[i])
+print(len(s))
