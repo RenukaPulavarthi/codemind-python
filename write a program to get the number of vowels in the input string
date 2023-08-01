@@ -1,0 +1,6 @@
+s=input()
+l=[]
+for i in range(len(s)):
+    if s[i] in "aeiouAEIOU" :
+        l.append(s[i])
+print(len(l))
