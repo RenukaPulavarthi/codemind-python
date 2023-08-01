@@ -1,0 +1,11 @@
+n=int(input())
+lst=list(map(int,input().split()))
+k=int(input())
+f=-1
+l=-1
+for i in range(n):
+    if lst[i]==k:
+        if f==-1:
+            f=i
+        l=i
+print(f,l)
