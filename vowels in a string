@@ -1,0 +1,11 @@
+s=input()
+k=input()
+l=0
+for i in range(len(s)):
+    if s[i]==k :
+        l=1
+        print("True")
+        print(i)
+        break;
+if l==0:
+    print("False")
