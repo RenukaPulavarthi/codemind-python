@@ -1,0 +1,14 @@
+s=input()
+l=[]
+u=[]
+for i in range(len(s)):
+    if s[i] in "aeiou" :
+        if s[i] not in l:
+            l.append(s[i])
+    elif s[i] in "AEIOU" :
+        if s[i] not in u:
+            u.append(s[i])
+if len(l)==5 or len(u)==5 :
+    print("True")
+else:
+    print("False")
