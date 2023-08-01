@@ -1,0 +1,7 @@
+n=int(input())
+lst=list(map(int,input().split()))
+l=sorted(lst,reverse=True)
+if lst==l:
+    print("yes")
+else:
+    print("no")
