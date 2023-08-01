@@ -1,0 +1,27 @@
+def valid(s):
+    l=[]
+    k=-1
+    if s[0]==")" or s[0]=="}" or s[0]=="]" :
+        print("False")
+    else:
+        for i in range(len(s)):
+            if s[i]==')' and l[k]=='(' :
+                l.pop()
+                k-=1
+            elif s[i]=='}' and l[k]=='{' :
+                l.pop()
+                k-=1
+            elif s[i]==']' and l[k]=='[' :
+                l.pop()
+                k-=1
+            else:
+                k+=1;
+                l.append(s[i])
+        if len(l)==0:
+            print("True")
+        else:
+            print("False")
+
+for i in range(int(input())):
+    s=input()
+    valid(s)
