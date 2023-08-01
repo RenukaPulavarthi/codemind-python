@@ -1,0 +1,12 @@
+s=input()
+l=[]
+for i in range(len(s)):
+    if s[i] in 'aeiouAEIOU':
+        l.append(s[i])
+k=len(l)-1
+for i in range(len(s)):
+    if s[i] in 'aeiouAEIOU' :
+        print(l[k],end="")
+        k-=1
+    else:
+        print(s[i],end="")
