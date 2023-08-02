@@ -1,0 +1,8 @@
+s=input()
+c=0
+for i in range(len(s)):
+    if s[i].isalnum() or s[i]==" ":
+        pass
+    else:
+        c+=1
+print(c)
