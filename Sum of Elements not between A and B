@@ -1,0 +1,5 @@
+n=int(input())
+lst=list(map(int,input().split()))
+n,m=map(int,input().split())
+l=[i for i in lst if i<n or i>m]
+print(sum(l))
