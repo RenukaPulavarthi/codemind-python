@@ -1,1 +1,8 @@
-
+n=int(input())
+lst=list(map(int,input().split()))
+n,m=map(int,input().split())
+l=[i for i in lst if i<n or i>m]
+if len(l)==0:
+    print("-1")
+else:
+    print(min(l))
