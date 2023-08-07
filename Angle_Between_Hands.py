@@ -1,0 +1,5 @@
+n=input()
+h=int(n[0:2])
+m=int(n[3:5])
+a=abs((30*h)-(5.5*m))
+print(a if 360-a>a else 360-a)
