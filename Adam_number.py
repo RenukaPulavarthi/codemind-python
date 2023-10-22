@@ -1,15 +1,9 @@
 n=input()
-r=n[::-1]
-k=int(n)
-m=int(r)
-sq=k*k
-sq1=m*m
-so=0
-while sq1:
-    re=sq1%10
-    so=so*10+re
-    sq1=sq1//10
-if sq==so:
+s1=int(n)**2
+k=int(n[::-1])
+s2=str(int(k)**2)
+s2=int(s2[::-1])
+if s1==s2:
     print("True")
 else:
     print("False")
