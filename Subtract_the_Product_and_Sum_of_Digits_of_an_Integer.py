@@ -1,7 +1,7 @@
 n=int(input())
 s=0
 m=1
-while n:
+while(n):
     re=n%10
     s+=re
     m*=re
