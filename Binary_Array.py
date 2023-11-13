@@ -1,10 +1,8 @@
 n=int(input())
-lst=list(input().split())
-f=0
+lst=list(map(int,input().split()))
 for i in lst:
-    if i in '01':
-        pass
-    else:
-        f=1
-        break
-print(f==0)
+    if i!=0 and i!=1:
+        print("False")
+        break;
+else:
+    print("True")
