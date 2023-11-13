@@ -1,8 +1,6 @@
-r=int(input())
-c=int(input())
-k=[]
-for i in range(r):
-    l=list(map(int,input().split()))
-    k.append(sum(l))
-print(sum(k))
-    
+n=int(input())
+m=int(input())
+s=0
+for i in range(n):
+    s+=sum(list(map(int,input().split())))
+print(s)
